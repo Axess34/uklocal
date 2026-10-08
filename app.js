@@ -54,8 +54,7 @@
       'Facebook: ' + payload.fb_url + '\nBusiness: ' + payload.shop_name + '\nPhone: ' + payload.contact +
       (payload.email ? '\nEmail: ' + payload.email : '') + '\nTown: ' + (payload.city || '');
     errBox.innerHTML = 'Sorry, that didn\'t send. Please try again, or email your details to us.<br>' +
-      '<a href="mailto:' + MAIL + '?subject=' + encodeURIComponent('Free draft request') + '&body=' + encodeURIComponent(text) + '">Email ' + MAIL + ' →</a>' +
-"';
+      '<a href="mailto:' + MAIL + '?subject=' + encodeURIComponent('Free draft request') + '&body=' + encodeURIComponent(text) + '">Email ' + MAIL + ' →</a>';
     errBox.hidden = false;
   }
 

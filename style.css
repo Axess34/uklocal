@@ -165,6 +165,19 @@ input:focus,select:focus{outline:none;border-color:var(--g7);box-shadow:0 0 0 4p
 .step-list b .nw{display:inline}
 .card-b .tag{display:inline-block;align-self:flex-start;margin-top:4px;font-size:12px;font-weight:500;color:var(--g7);background:var(--mint2);border:1px solid var(--mint);border-radius:999px;padding:1px 8px}
 
+/* links to /why/ explainer */
+.top-r{display:flex;align-items:center;gap:16px}
+.nav-link{display:none;color:var(--g9);font-weight:600;font-size:15px;text-decoration:none;line-height:1.2}
+.nav-link span{display:block;font-size:12px;font-weight:400;color:var(--mut)}
+.nav-link:hover{color:var(--or)}
+.why-link{text-align:center;margin:22px 0 0;font-size:16px}
+.why-link a{color:var(--g7);font-weight:600}
+.why-link a span{display:block;font-weight:400;font-size:14px;color:var(--mut)}
+.foot-links{margin-top:6px!important}
+.foot-links a{color:var(--mint);font-size:14px}
+.foot-links a span{display:inline;font-size:13px}
+@media (min-width:600px){.nav-link{display:block}}
+
 /* English-only additions for UK Local / Oz Local */
 body{font-family:Kanit,system-ui,sans-serif}
 .btn-mail{flex-direction:row;gap:8px;background:rgba(255,255,255,.12);color:#fff;border:2px solid rgba(255,255,255,.5);font-weight:500}
