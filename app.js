@@ -7,7 +7,6 @@
   var ENDPOINT = SUPABASE_URL + '/rest/v1/thailocal_draft_requests';
   var COUNTRY = 'UK';
   var MAIL = 'hello@uklocal.online';
-  var WA = 'https://wa.me/66656495277';
 
   var form = document.getElementById('draftForm');
   if (!form) return;
@@ -56,7 +55,7 @@
       (payload.email ? '\nEmail: ' + payload.email : '') + '\nTown: ' + (payload.city || '');
     errBox.innerHTML = 'Sorry, that didn\'t send. Please try again, or email your details to us.<br>' +
       '<a href="mailto:' + MAIL + '?subject=' + encodeURIComponent('Free draft request') + '&body=' + encodeURIComponent(text) + '">Email ' + MAIL + ' →</a>' +
-      ' &nbsp;·&nbsp; <a href="' + WA + '?text=' + encodeURIComponent(text) + '" target="_blank" rel="noopener">WhatsApp →</a>';
+"';
     errBox.hidden = false;
   }
 
