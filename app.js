@@ -1,5 +1,5 @@
 /* UK Local: free draft request form.
-   Submissions go to Supabase table public.thailocal_draft_requests (shared with thailocal.online) with country='UK'.
+   Submissions go to Supabase the shared draft-requests table with country='UK'.
    The publishable key below is safe to expose: anon can only INSERT rows into this one table (RLS) and cannot read anything. */
 (function () {
   var SUPABASE_URL = 'https://ivleheagpnenoaevpcjv.supabase.co';
