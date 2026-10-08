@@ -161,6 +161,10 @@
         <label for="city">Town or city <span class="opt">(optional)</span></label>
         <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g. Leeds" maxlength="100">
       </div>
+      <div class="field field-check">
+        <label class="check" for="consent"><input id="consent" name="consent" type="checkbox" required><span>I’m happy for UK Local to contact me by email or phone about my free website draft. No spam, and I can opt out any time. <span class="req">*</span></span></label>
+        <p class="err" data-for="consent">Please tick the box so we can contact you about your draft</p>
+      </div>
       <!-- honeypot: humans never see or fill this -->
       <div class="hp" aria-hidden="true">
         <label for="website">Website</label>
@@ -168,7 +172,7 @@
       </div>
       <button class="btn btn-orange btn-lg btn-block" type="submit" id="submitBtn">Send my free draft request</button>
       <p class="form-error" id="formError" hidden></p>
-      <p class="privacy">🔒 We only use your details to make your draft and contact you about it. Ask us to delete them any time.</p>
+      <p class="privacy">🔒 We only use your details to build and talk about your draft.</p>
     </form>
 
     <div class="thanks" id="thanks" hidden tabindex="-1">

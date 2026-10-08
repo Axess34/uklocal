@@ -33,6 +33,7 @@
     ok = setInvalid('shop_name', shop.length < 1 || shop.length > 200) && ok;
     ok = setInvalid('contact', contact.replace(/[\s\-()+]/g, '').length < 3 || contact.length > 200) && ok;
     ok = setInvalid('email', email && (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254)) && ok;
+    ok = setInvalid('consent', !form.elements.consent.checked) && ok;
     return ok;
   }
   ['fb_url', 'shop_name', 'contact', 'email'].forEach(function (id) {
@@ -40,6 +41,10 @@
       var f = this.closest('.field');
       if (f && f.classList.contains('invalid')) validate();
     });
+  });
+  form.elements.consent.addEventListener('change', function () {
+    var f = this.closest('.field');
+    if (f && f.classList.contains('invalid')) validate();
   });
 
   function showThanks() {
@@ -76,6 +81,7 @@
       email: val('email') || null,
       city: val('city').slice(0, 100) || null,
       country: COUNTRY,
+      consent: form.elements.consent.checked === true,
       user_agent: (navigator.userAgent || '').slice(0, 500)
     };
 

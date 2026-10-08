@@ -201,6 +201,11 @@ body{font-family:Kanit,system-ui,sans-serif}
 .why-link{text-align:center;margin:22px 0 0;font-size:16px}
 .why-link a{color:var(--g7);font-weight:600}
 .foot-links{margin-top:6px!important}
+.field-check{margin-top:4px}
+.check{display:flex;gap:12px;align-items:flex-start;font-weight:400;font-size:15px;line-height:1.45;color:var(--ink2);cursor:pointer;margin:0}
+.check input[type=checkbox]{-webkit-appearance:checkbox;appearance:auto;flex:none;width:22px;height:22px;margin:1px 0 0;padding:0;border:0;box-shadow:none;accent-color:var(--g7);cursor:pointer}
+.field.invalid .check{color:#991B1B}
+.field.invalid .check input[type=checkbox]{outline:2px solid #DC2626;outline-offset:2px;background:none}
 .foot-links a{color:var(--mint);font-size:14px}
 @media (min-width:560px){.nav-link{display:inline}}
 @media (min-width:640px){.tiles{grid-template-columns:repeat(4,1fr)}}
