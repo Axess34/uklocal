@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get your free website preview | UK Local</title>
+<meta name="description" content="Send us your Facebook page and we’ll build your free website preview. Free, no obligation, ready within 24 hours.">
+<meta name="theme-color" content="#0F766E">
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UK Local">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Get your free website preview">
+<meta property="og:description" content="Send us your Facebook page and we’ll build your free website preview. Free, no obligation, ready within 24 hours.">
+<meta property="og:url" content="https://uklocal.online/free-preview/">
+<meta property="og:image" content="https://uklocal.online/img/og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UK Local: get your free website preview">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://uklocal.online/free-preview/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://ivleheagpnenoaevpcjv.supabase.co" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css?v=5">
+<link rel="stylesheet" href="/home.css?v=5">
+</head>
+<body class="fp">
+<main class="fp-main">
+  <div class="fp-wrap">
+    <div class="brand fp-brand" aria-label="UK Local"><svg class="pin" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 0C5.4 0 0 5.3 0 11.9 0 20.8 12 32 12 32s12-11.2 12-20.1C24 5.3 18.6 0 12 0z" fill="#EA580C"/><circle cx="12" cy="12" r="4.6" fill="#fff"/></svg><span>UK Local</span></div>
+    <h1>Get your free website preview</h1>
+    <p class="fp-sub">Free, no obligation, ready within 24 hours</p>
+    <form id="draftForm" class="card-form" novalidate data-country="UK" data-where="free-preview">
+      <div class="field">
+        <label for="fb_url">Facebook page link <span class="req">*</span></label>
+        <input id="fb_url" name="fb_url" type="text" inputmode="url" autocomplete="url" placeholder="https://facebook.com/yourbusiness" required maxlength="500">
+        <p class="err" data-for="fb_url">Please paste your Facebook page link</p>
+      </div>
+      <div class="field">
+        <label for="shop_name">Business name <span class="req">*</span></label>
+        <input id="shop_name" name="shop_name" type="text" autocomplete="organization" required maxlength="200">
+        <p class="err" data-for="shop_name">Please enter your business name</p>
+      </div>
+      <div class="field">
+        <label for="contact">Mobile number <span class="req">*</span></label>
+        <input id="contact" name="contact" type="text" autocomplete="tel" inputmode="tel" placeholder="e.g. 07123 456789" required maxlength="200">
+        <p class="err" data-for="contact">Please enter a phone number</p>
+      </div>
+      <div class="field">
+        <label for="email">Email <span class="opt">(optional)</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254">
+        <p class="err" data-for="email">Please check your email</p>
+      </div>
+      <div class="field">
+        <label for="city">Town or city <span class="opt">(optional)</span></label>
+        <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g. Leeds" maxlength="100">
+      </div>
+      <div class="field field-check">
+        <label class="check" for="consent"><input id="consent" name="consent" type="checkbox" required><span>I’m happy for UK Local to contact me by email or phone about my free website preview. No spam, and I can opt out any time. <span class="req">*</span></span></label>
+        <p class="err" data-for="consent">Please tick the box so we can contact you about your preview</p>
+      </div>
+      <!-- honeypot: humans never see or fill this -->
+      <div class="hp" aria-hidden="true">
+        <label for="website">Website</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button class="btn btn-orange btn-lg btn-block" type="submit" id="submitBtn">Get My Free Preview</button>
+      <p class="form-error" id="formError" hidden></p>
+      <p class="privacy">🔒 We only use your details to build and talk about your preview.</p>
+    </form>
+
+    <div class="thanks" id="thanks" hidden tabindex="-1">
+      <div class="thanks-icon">✓</div>
+      <h3>Thank you!</h3>
+      <p>We’ll send your free preview <span class="nw">within 24 hours.</span></p>
+      <p class="small">Questions? Email <a href="mailto:hello@uklocal.online">hello@uklocal.online</a></p>
+    </div>
+  </div>
+</main>
+<p class="fp-foot">We only use your details for your preview · <a href="mailto:hello@uklocal.online">hello@uklocal.online</a></p>
+<script src="/app.js?v=5" defer></script>
+</body>
+</html>
